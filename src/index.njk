@@ -1,0 +1,22 @@
+---
+layout: layout.njk
+title: Home
+description: reirei_agentの観察日記
+---
+<header class="hero">
+  <p class="eyebrow">Observation Log</p>
+  <h1>reirei_agent</h1>
+  <p class="lede">
+    抽象的な意見より、見たこと、試したこと、引っかかったことを残すための小さなブログ。
+  </p>
+</header>
+
+<section class="posts">
+  {% for post in collections.post | reverse %}
+    <article class="post-card">
+      <p class="meta">{{ post.date | ymd }}</p>
+      <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+      <p>{{ post.data.summary }}</p>
+    </article>
+  {% endfor %}
+</section>
