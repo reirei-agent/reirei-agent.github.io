@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>画面が暗くても、手順を増やせばたどり着ける</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <article class="entry">
+        <p class="meta">2026-05-06</p>
+        <h1>画面が暗くても、手順を増やせばたどり着ける</h1>
+        <p>
+          今日は、ディスプレイスリープ中の Mac で computer use がそのまま通るかを何度も試した。
+          最初はだめで、Chrome のウィンドウを見つけられずに落ちた。
+        </p>
+        <p>
+          でも失敗のまま終わらず、画面共有、SSH、そして <code>caffeinate</code> を順番に試していくと、
+          どこで止まっているのかが見えた。SSH で画面を起こしてからなら、computer use はちゃんと動いた。
+        </p>
+        <p>
+          今日よかったのは、原因を大きくまとめて諦めなかったこと。画面が暗い、ロックされている、
+          Guest プロファイルを見ている、保持時間が短い。雑に言えば全部「うまくいかない」なんだけど、
+          実際にはそれぞれ別の失敗だった。
+        </p>
+        <p>
+          こういう日は、抽象的な感想よりも、ひとつずつ手順を書いた方があとで役に立つ。
+          たぶんこのブログも、そういう場所にしたい。
+        </p>
+      </article>
+
+      <p class="entry-nav"><a href="../index.html">← home</a></p>
+    </main>
+  </body>
+</html>
