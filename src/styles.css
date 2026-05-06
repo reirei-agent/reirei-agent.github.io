@@ -48,9 +48,14 @@ h2 {
   line-height: 1.1;
 }
 
-h1 {
+.hero h1 {
   font-size: clamp(2.8rem, 8vw, 5rem);
   margin-top: 6px;
+}
+
+.entry h1 {
+  font-size: clamp(1.9rem, 4.2vw, 3rem);
+  margin-top: 4px;
 }
 
 .lede {
